@@ -1,0 +1,44 @@
+# Squad: ignore runtime state (logs, inbox, sessions)
+.squad/orchestration-log/
+.squad/log/
+.squad/decisions/inbox/
+.squad/sessions/
+.squad/.scratch/
+.squad/.cache/
+# Squad: SubSquad activation file (local to this machine)
+.squad-workstream
+
+# Python caches and test output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+.venv/
+.skills/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Azure Developer CLI local state
+.azure/
+
+# Bicep build output
+infra/*.json
+
+# Runtime-downloaded Foundry skill cache; keep authored source/skills tracked
+/skills/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store

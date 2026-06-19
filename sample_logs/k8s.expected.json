@@ -1,0 +1,11 @@
+{
+  "scenario": "k8s",
+  "root_cause": "Container 'orders-api' exceeded its 512Mi memory limit and was OOMKilled (exit code 137). The repeated kills drove the pod into CrashLoopBackOff, so its readiness probe never passed and the Deployment dropped below desired availability.",
+  "key_signatures": [
+    "Memory cgroup out of memory",
+    "reason=OOMKilled exit_code=137",
+    "CrashLoopBackOff",
+    "Readiness probe failed",
+    "exit_code=137"
+  ]
+}

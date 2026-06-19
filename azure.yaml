@@ -1,0 +1,32 @@
+name: foundry-skills
+metadata:
+  template: foundry-skills@0.0.1
+infra:
+  provider: bicep
+  path: infra
+  module: main
+hooks:
+  preprovision:
+    shell: sh
+    run: |
+      if [ -z "${AZURE_ENV_NAME:-}" ]; then
+        echo "AZURE_ENV_NAME is not set. Run 'azd env new' first and choose East US 2 (eastus2) when prompted for location."
+        exit 1
+      fi
+
+      expected_resource_group="rg-${AZURE_ENV_NAME}"
+      current_resource_group="${AZURE_RESOURCE_GROUP:-}"
+
+      if [ "${current_resource_group}" != "${expected_resource_group}" ]; then
+        echo "Setting AZURE_RESOURCE_GROUP=${expected_resource_group}"
+        azd env set AZURE_RESOURCE_GROUP "${expected_resource_group}"
+        export AZURE_RESOURCE_GROUP="${expected_resource_group}"
+      else
+        echo "Using AZURE_RESOURCE_GROUP=${current_resource_group}"
+      fi
+
+  postprovision:
+    shell: sh
+    interactive: true
+    run: |
+      sh ./infra/post-provision.sh
