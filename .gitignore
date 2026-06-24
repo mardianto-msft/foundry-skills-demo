@@ -7,6 +7,9 @@
 .github/workflows/squad-*.yml
 .github/workflows/sync-squad-labels.yml
 
+# Local Copilot agent customization files
+.copilot/
+
 # Python caches and test output
 __pycache__/
 *.py[cod]
