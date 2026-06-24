@@ -32,7 +32,6 @@ env/
 # Local environment and secrets
 .env
 .env.*
-!.env.example
 
 # Azure Developer CLI local state
 .azure/

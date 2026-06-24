@@ -240,8 +240,8 @@ def main() -> None:
     model_deployment = os.environ.get("MODEL_DEPLOYMENT_NAME")
     if not endpoint:
         sys.exit(
-            "error: FOUNDRY_PROJECT_ENDPOINT is not set. Copy .env.example to "
-            ".env and populate it (see infra/provision.sh output)."
+            "error: FOUNDRY_PROJECT_ENDPOINT is not set. Run azd up to generate .env, "
+            "or create .env from the values printed by infra/provision.sh."
         )
 
     log_text = _read_text(Path(args.log), "log file")

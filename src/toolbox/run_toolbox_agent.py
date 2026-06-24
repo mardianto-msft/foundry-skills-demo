@@ -361,9 +361,9 @@ def main() -> None:
     endpoint = os.environ.get("FOUNDRY_PROJECT_ENDPOINT")
     model_deployment = os.environ.get("MODEL_DEPLOYMENT_NAME")
     if not endpoint:
-        sys.exit("error: FOUNDRY_PROJECT_ENDPOINT is not set. Copy .env.example to .env first.")
+        sys.exit("error: FOUNDRY_PROJECT_ENDPOINT is not set. Run azd up to generate .env, or create .env from infra/provision.sh output.")
     if not model_deployment:
-        sys.exit("error: MODEL_DEPLOYMENT_NAME is not set. Copy .env.example to .env first.")
+        sys.exit("error: MODEL_DEPLOYMENT_NAME is not set. Run azd up to generate .env, or create .env from infra/provision.sh output.")
 
     log_paths = [Path(value) for value in _split_csv(args.log, DEFAULT_LOG_PATHS)]
     toolbox_endpoint = _build_toolbox_endpoint(endpoint, args.toolbox_name, args.toolbox_version)

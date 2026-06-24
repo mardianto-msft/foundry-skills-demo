@@ -72,7 +72,6 @@ foundry-skills/
 ├── README.md
 ├── azure.yaml                  # azd deployment entry point
 ├── requirements.txt
-├── .env.example
 ├── infra/                      # Bicep + provisioning for the Foundry project
 │   ├── main.bicep
 │   ├── main.bicepparam

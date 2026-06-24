@@ -180,7 +180,7 @@ def main() -> None:
 
     endpoint = os.environ.get("FOUNDRY_PROJECT_ENDPOINT")
     if not endpoint:
-        sys.exit("error: FOUNDRY_PROJECT_ENDPOINT is not set. Copy .env.example to .env first.")
+        sys.exit("error: FOUNDRY_PROJECT_ENDPOINT is not set. Run azd up to generate .env, or create .env from infra/provision.sh output.")
 
     skill_names = _split_csv(
         args.skill_name,
