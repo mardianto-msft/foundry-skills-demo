@@ -16,7 +16,10 @@ param modelVersion = readEnvironmentVariable('AZURE_AI_MODEL_VERSION', '2026-03-
 
 // Deployment sizing.
 param deploymentSkuName = readEnvironmentVariable('AZURE_AI_DEPLOYMENT_SKU', 'GlobalStandard')
-param deploymentCapacity = int(readEnvironmentVariable('AZURE_AI_DEPLOYMENT_CAPACITY', '10'))
+param deploymentCapacity = int(readEnvironmentVariable('AZURE_AI_DEPLOYMENT_CAPACITY', '50'))
+
+// Optional toolbox/MCP flow.
+param foundryToolboxName = readEnvironmentVariable('FOUNDRY_TOOLBOX_NAME', 'logs-analysis-toolbox')
 
 param tags = {
   workload: 'logs-analysis'

@@ -319,6 +319,27 @@ For known sample cases, pass `--selected-skill <name>` to skip the model-routing
 call while still testing toolbox `resources/read` and analysis with the selected
 skill.
 
+## Troubleshooting
+
+### Model Deployment Rate Limited (429)
+
+If an agent run fails with a model deployment rate-limit error such as HTTP 429,
+increase the model deployment TPM capacity before reprovisioning. The deployment
+capacity is configured in [infra/main.bicepparam](infra/main.bicepparam) with the
+`AZURE_AI_DEPLOYMENT_CAPACITY` environment variable, which maps to
+`deploymentCapacity` in [infra/main.bicep](infra/main.bicep). The value is in
+thousands of tokens per minute (TPM).
+
+For example, to raise the deployment to 50k TPM:
+
+```bash
+azd env set AZURE_AI_DEPLOYMENT_CAPACITY 50
+azd up
+```
+
+If quota is still insufficient in the selected region or SKU, request more Azure
+OpenAI quota or choose a region/SKU with available capacity, then rerun `azd up`.
+
 ## Appendix
 
 ### Azure Resource Naming
@@ -345,6 +366,7 @@ scripts read, including:
 - `MODEL_DEPLOYMENT_NAME`
 - `AZURE_REGION`
 - `FOUNDRY_SKILL_NAMES`
+- `FOUNDRY_TOOLBOX_NAME`
 - `SOURCE_SKILL_PATHS`
 - `AGENT_NAME`
 

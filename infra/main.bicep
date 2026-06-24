@@ -32,7 +32,10 @@ param deploymentSkuName string = 'GlobalStandard'
 
 @description('Provisioned throughput / capacity (in thousands of TPM) for the deployment.')
 @minValue(1)
-param deploymentCapacity int = 10
+param deploymentCapacity int = 50
+
+@description('Default Foundry toolbox name for the optional toolbox/MCP flow.')
+param foundryToolboxName string = 'logs-analysis-toolbox'
 
 @description('Tags applied to all resources.')
 param tags object = {
@@ -128,6 +131,9 @@ output FOUNDRY_SKILL_NAME string = 'web-logs-analysis'
 
 @description('Comma-separated Foundry skill names exported for the multi-skill direct-download demo.')
 output FOUNDRY_SKILL_NAMES string = 'web-logs-analysis,k8s-logs-analysis'
+
+@description('Foundry toolbox name exported for the optional toolbox/MCP flow.')
+output FOUNDRY_TOOLBOX_NAME string = foundryToolboxName
 
 @description('Local source skill path exported for the Python publishing demo.')
 output SKILL_PATH string = 'source/skills/web-logs-analysis/SKILL.md'
