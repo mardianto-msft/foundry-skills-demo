@@ -2,6 +2,11 @@
 .squad/
 .squad-workstream
 
+# Squad GitHub integration files
+.github/agents/squad.agent.md
+.github/workflows/squad-*.yml
+.github/workflows/sync-squad-labels.yml
+
 # Python caches and test output
 __pycache__/
 *.py[cod]
