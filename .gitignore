@@ -10,6 +10,9 @@
 # Local Copilot agent customization files
 .copilot/
 
+# Local MCP server configuration
+.mcp.json
+
 # Python caches and test output
 __pycache__/
 *.py[cod]
