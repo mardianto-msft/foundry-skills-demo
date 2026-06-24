@@ -1,0 +1,11 @@
+{
+  "scenario": "mixed",
+  "root_cause": "The TLS certificate for upstream 'payments.partner.example.invalid' expired (notAfter 2026-06-15), so all outbound HTTPS calls failed x509 verification. This caused payment-capture failures, HTTP 502s, and an open circuit breaker \u2014 while unrelated INFO/WARN noise continued.",
+  "key_signatures": [
+    "x509: certificate has expired or is not yet valid",
+    "SSL_ERROR_EXPIRED_CERT_ALERT",
+    "certificate verify failed (cert expired)",
+    "notAfter=2026-06-15",
+    "UpstreamTLSCertExpired"
+  ]
+}

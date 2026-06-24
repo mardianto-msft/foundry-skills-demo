@@ -1,0 +1,11 @@
+{
+  "scenario": "web",
+  "root_cause": "Database connection pool exhaustion (HikariCP 'primary' pool reached 20/20 active connections with a growing wait queue), causing request timeouts that cascaded into HTTP 500/503 errors and failed health checks.",
+  "key_signatures": [
+    "HikariPool-1 - Connection is not available, request timed out after 30000ms",
+    "PoolExhaustedException",
+    "active=20, idle=0, waiting=12",
+    "SQLTransientConnectionException",
+    "HighHttp5xxRate"
+  ]
+}

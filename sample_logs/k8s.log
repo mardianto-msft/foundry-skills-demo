@@ -1,0 +1,82 @@
+2026-06-17T14:30:00.772Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=6
+2026-06-17T14:30:01.886Z INFO  [web-frontend-9a501] ns=shop-prod pod=web-frontend-9a501 GET /healthz 200 latency_ms=17
+2026-06-17T14:30:02.738Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=3
+2026-06-17T14:30:04.046Z INFO  [kubelet] ns=shop-prod pod=search-svc-6b601 Liveness probe ok consecutive=46
+2026-06-17T14:30:04.582Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=7
+2026-06-17T14:30:05.357Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=1
+2026-06-17T14:30:05.673Z INFO  [web-frontend-9a501] ns=shop-prod pod=web-frontend-9a501 GET /healthz 200 latency_ms=18
+2026-06-17T14:30:06.646Z INFO  [kube-controller] ns=shop-prod pod=catalog-api-5d406 metrics cpu_m=106 mem_mi=225
+2026-06-17T14:30:07.528Z INFO  [kubelet] ns=shop-prod pod=catalog-api-5d406 Liveness probe ok consecutive=36
+2026-06-17T14:30:08.071Z INFO  [web-frontend-9a501] ns=shop-prod pod=web-frontend-9a501 GET /healthz 200 latency_ms=4
+2026-06-17T14:30:08.290Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=7
+2026-06-17T14:30:09.641Z INFO  [kubelet] ns=shop-prod pod=web-frontend-9a501 Liveness probe ok consecutive=14
+2026-06-17T14:30:10.126Z INFO  [web-frontend-9a501] ns=shop-prod pod=web-frontend-9a501 GET /healthz 200 latency_ms=10
+2026-06-17T14:30:11.176Z INFO  [kubelet] ns=shop-prod pod=catalog-api-5d406 Liveness probe ok consecutive=13
+2026-06-17T14:30:11.389Z INFO  [kubelet] ns=shop-prod pod=catalog-api-5d406 Liveness probe ok consecutive=11
+2026-06-17T14:30:12.100Z INFO  [kube-controller] ns=shop-prod pod=search-svc-6b601 metrics cpu_m=61 mem_mi=137
+2026-06-17T14:30:12.750Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=15
+2026-06-17T14:30:14.028Z INFO  [web-frontend-9a501] ns=shop-prod pod=web-frontend-9a501 GET /healthz 200 latency_ms=12
+2026-06-17T14:30:14.860Z INFO  [web-frontend-9a501] ns=shop-prod pod=web-frontend-9a501 GET /healthz 200 latency_ms=13
+2026-06-17T14:30:15.308Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=8
+2026-06-17T14:30:16.448Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=7
+2026-06-17T14:30:17.252Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=16
+2026-06-17T14:30:18.101Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=14
+2026-06-17T14:30:18.552Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=1
+2026-06-17T14:30:18.784Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=14
+2026-06-17T14:30:19.096Z INFO  [kubelet] ns=shop-prod pod=web-frontend-9a501 Liveness probe ok consecutive=15
+2026-06-17T14:30:20.318Z INFO  [kubelet] ns=shop-prod pod=web-frontend-9a501 Liveness probe ok consecutive=16
+2026-06-17T14:30:21.320Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=13
+2026-06-17T14:30:21.998Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=9
+2026-06-17T14:30:22.428Z INFO  [kube-controller] ns=shop-prod pod=catalog-api-5d406 metrics cpu_m=60 mem_mi=224
+2026-06-17T14:30:22.990Z INFO  [kubelet] ns=shop-prod pod=catalog-api-5d406 Liveness probe ok consecutive=34
+2026-06-17T14:30:23.707Z INFO  [catalog-api-5d406] ns=shop-prod pod=catalog-api-5d406 GET /healthz 200 latency_ms=20
+2026-06-17T14:30:24.301Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=11
+2026-06-17T14:30:25.639Z INFO  [kubelet] ns=shop-prod pod=web-frontend-9a501 Liveness probe ok consecutive=21
+2026-06-17T14:30:26.266Z INFO  [kube-controller] ns=shop-prod pod=search-svc-6b601 metrics cpu_m=95 mem_mi=175
+2026-06-17T14:30:27.206Z INFO  [search-svc-6b601] ns=shop-prod pod=search-svc-6b601 GET /healthz 200 latency_ms=9
+2026-06-17T14:30:27.776Z INFO  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf node=aks-nodepool1-2271 event=Scheduled Successfully assigned pod to node
+2026-06-17T14:30:28.145Z INFO  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Pulled Container image "registry.example.invalid/orders-api:1.8.2" already present
+2026-06-17T14:30:28.930Z INFO  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=Created Created container
+2026-06-17T14:30:29.539Z INFO  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=Started Started container
+2026-06-17T14:30:30.046Z INFO  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf heap_used_mb=209 limit_mb=512 utilization=41% gc_pause_ms=30
+2026-06-17T14:30:31.377Z INFO  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf heap_used_mb=296 limit_mb=512 utilization=58% gc_pause_ms=39
+2026-06-17T14:30:32.232Z INFO  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf heap_used_mb=368 limit_mb=512 utilization=72% gc_pause_ms=36
+2026-06-17T14:30:32.883Z INFO  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf heap_used_mb=430 limit_mb=512 utilization=84% gc_pause_ms=12
+2026-06-17T14:30:33.673Z WARN  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf GC overhead high, freed_mb=3 after_full_gc utilization=84%
+2026-06-17T14:30:34.763Z INFO  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf heap_used_mb=476 limit_mb=512 utilization=93% gc_pause_ms=31
+2026-06-17T14:30:35.405Z WARN  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf GC overhead high, freed_mb=12 after_full_gc utilization=93%
+2026-06-17T14:30:35.819Z INFO  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf heap_used_mb=501 limit_mb=512 utilization=98% gc_pause_ms=30
+2026-06-17T14:30:37.201Z WARN  [orders-api] pod=orders-api-7c9f8b6d54-dcfaf GC overhead high, freed_mb=4 after_full_gc utilization=98%
+2026-06-17T14:30:38.012Z ERROR [kernel] node=aks-nodepool1-2271 Memory cgroup out of memory: Killed process (java) in pod orders-api-7c9f8b6d54-dcfaf total-vm:1843200kB anon-rss:524288kB
+2026-06-17T14:30:39.022Z ERROR [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=OOMKilling Container exceeded memory limit reason=OOMKilled exit_code=137
+2026-06-17T14:30:39.173Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=BackOff Back-off restarting failed container reason=CrashLoopBackOff restart_count=1 backoff=0s
+2026-06-17T14:30:39.525Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Unhealthy Readiness probe failed: Get "http://10.244.1.37:8080/ready": dial tcp: connection refused
+2026-06-17T14:30:40.013Z ERROR [kernel] node=aks-nodepool1-2271 Memory cgroup out of memory: Killed process (java) in pod orders-api-7c9f8b6d54-dcfaf total-vm:1843200kB anon-rss:524288kB
+2026-06-17T14:30:40.856Z ERROR [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=OOMKilling Container exceeded memory limit reason=OOMKilled exit_code=137
+2026-06-17T14:30:41.646Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=BackOff Back-off restarting failed container reason=CrashLoopBackOff restart_count=2 backoff=10s
+2026-06-17T14:30:41.787Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Unhealthy Readiness probe failed: Get "http://10.244.1.37:8080/ready": dial tcp: connection refused
+2026-06-17T14:30:42.917Z INFO  [kube-controller] ns=shop-prod deployment=orders-api replicas desired=3 available=0 updated=3
+2026-06-17T14:30:44.171Z ERROR [kernel] node=aks-nodepool1-2271 Memory cgroup out of memory: Killed process (java) in pod orders-api-7c9f8b6d54-dcfaf total-vm:1843200kB anon-rss:524288kB
+2026-06-17T14:30:44.911Z ERROR [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=OOMKilling Container exceeded memory limit reason=OOMKilled exit_code=137
+2026-06-17T14:30:45.490Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=BackOff Back-off restarting failed container reason=CrashLoopBackOff restart_count=3 backoff=20s
+2026-06-17T14:30:45.827Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Unhealthy Readiness probe failed: Get "http://10.244.1.37:8080/ready": dial tcp: connection refused
+2026-06-17T14:30:46.116Z ERROR [kernel] node=aks-nodepool1-2271 Memory cgroup out of memory: Killed process (java) in pod orders-api-7c9f8b6d54-dcfaf total-vm:1843200kB anon-rss:524288kB
+2026-06-17T14:30:46.416Z ERROR [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=OOMKilling Container exceeded memory limit reason=OOMKilled exit_code=137
+2026-06-17T14:30:46.579Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=BackOff Back-off restarting failed container reason=CrashLoopBackOff restart_count=4 backoff=40s
+2026-06-17T14:30:47.138Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Unhealthy Readiness probe failed: Get "http://10.244.1.37:8080/ready": dial tcp: connection refused
+2026-06-17T14:30:48.263Z ERROR [kernel] node=aks-nodepool1-2271 Memory cgroup out of memory: Killed process (java) in pod orders-api-7c9f8b6d54-dcfaf total-vm:1843200kB anon-rss:524288kB
+2026-06-17T14:30:48.773Z ERROR [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=OOMKilling Container exceeded memory limit reason=OOMKilled exit_code=137
+2026-06-17T14:30:49.218Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=BackOff Back-off restarting failed container reason=CrashLoopBackOff restart_count=5 backoff=80s
+2026-06-17T14:30:50.174Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Unhealthy Readiness probe failed: Get "http://10.244.1.37:8080/ready": dial tcp: connection refused
+2026-06-17T14:30:50.491Z ERROR [kernel] node=aks-nodepool1-2271 Memory cgroup out of memory: Killed process (java) in pod orders-api-7c9f8b6d54-dcfaf total-vm:1843200kB anon-rss:524288kB
+2026-06-17T14:30:51.840Z ERROR [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=OOMKilling Container exceeded memory limit reason=OOMKilled exit_code=137
+2026-06-17T14:30:51.984Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=BackOff Back-off restarting failed container reason=CrashLoopBackOff restart_count=6 backoff=160s
+2026-06-17T14:30:52.187Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Unhealthy Readiness probe failed: Get "http://10.244.1.37:8080/ready": dial tcp: connection refused
+2026-06-17T14:30:53.569Z INFO  [kube-controller] ns=shop-prod deployment=orders-api replicas desired=3 available=0 updated=3
+2026-06-17T14:30:54.646Z ERROR [kernel] node=aks-nodepool1-2271 Memory cgroup out of memory: Killed process (java) in pod orders-api-7c9f8b6d54-dcfaf total-vm:1843200kB anon-rss:524288kB
+2026-06-17T14:30:55.267Z ERROR [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=OOMKilling Container exceeded memory limit reason=OOMKilled exit_code=137
+2026-06-17T14:30:56.121Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf container=orders-api event=BackOff Back-off restarting failed container reason=CrashLoopBackOff restart_count=7 backoff=300s
+2026-06-17T14:30:56.658Z WARN  [kubelet] ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf event=Unhealthy Readiness probe failed: Get "http://10.244.1.37:8080/ready": dial tcp: connection refused
+2026-06-17T14:30:57.917Z INFO  [kube-controller] ns=shop-prod deployment=orders-api replicas desired=3 available=0 updated=3
+2026-06-17T14:30:58.350Z WARN  [kube-scheduler] ns=shop-prod deployment=orders-api Deployment availability degraded: 1/3 pods Ready
+2026-06-17T14:30:59.457Z INFO  [alertmanager] ALERT fired: PodCrashLooping ns=shop-prod pod=orders-api-7c9f8b6d54-dcfaf reason=OOMKilled for=5m runbook=raise-memory-limit-or-fix-leak

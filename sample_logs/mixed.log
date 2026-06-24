@@ -1,0 +1,97 @@
+2026-06-17T02:15:00.179Z WARN  [cache-redis] retrying transient publish to queue attempt=1/3
+2026-06-17T02:15:01.437Z INFO  [metrics-agent] scheduled job 'nightly-report' completed in 198ms rows=3733
+2026-06-17T02:15:02.027Z INFO  [cron-runner] healthcheck ok deps=[db,cache,queue] latency_ms=17
+2026-06-17T02:15:03.636Z INFO  [worker-03] cache hit ratio=0.94 keys=7874 evictions=17
+2026-06-17T02:15:04.639Z INFO  [cron-runner] config reloaded watch=/etc/app/config.yaml generation=60
+2026-06-17T02:15:05.259Z INFO  [cron-runner] config reloaded watch=/etc/app/config.yaml generation=38
+2026-06-17T02:15:06.113Z WARN  [cache-redis] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:06.536Z INFO  [worker-03] config reloaded watch=/etc/app/config.yaml generation=27
+2026-06-17T02:15:08.611Z WARN  [worker-03] slow query detected duration_ms=2666 query='SELECT ... LIMIT 50'
+2026-06-17T02:15:10.574Z WARN  [metrics-agent] slow query detected duration_ms=3153 query='SELECT ... LIMIT 50'
+2026-06-17T02:15:10.948Z WARN  [cache-redis] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:12.471Z INFO  [metrics-agent] session refreshed user_id=usr-8939 ttl_s=3600
+2026-06-17T02:15:13.676Z INFO  [cron-runner] healthcheck ok deps=[db,cache,queue] latency_ms=148
+2026-06-17T02:15:14.087Z INFO  [metrics-agent] session refreshed user_id=usr-1093 ttl_s=3600
+2026-06-17T02:15:14.331Z WARN  [cache-redis] retrying transient publish to queue attempt=1/3
+2026-06-17T02:15:15.023Z WARN  [cache-redis] slow query detected duration_ms=2476 query='SELECT ... LIMIT 50'
+2026-06-17T02:15:16.848Z WARN  [auth-svc] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:17.188Z WARN  [cache-redis] retrying transient publish to queue attempt=3/3
+2026-06-17T02:15:18.207Z WARN  [cache-redis] retrying transient publish to queue attempt=3/3
+2026-06-17T02:15:20.072Z INFO  [cron-runner] config reloaded watch=/etc/app/config.yaml generation=25
+2026-06-17T02:15:21.293Z WARN  [cache-redis] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:22.460Z INFO  [auth-svc] config reloaded watch=/etc/app/config.yaml generation=95
+2026-06-17T02:15:24.450Z INFO  [api-gateway] healthcheck ok deps=[db,cache,queue] latency_ms=157
+2026-06-17T02:15:26.134Z WARN  [cache-redis] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:27.156Z WARN  [metrics-agent] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:28.778Z WARN  [metrics-agent] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:29.554Z INFO  [auth-svc] config reloaded watch=/etc/app/config.yaml generation=18
+2026-06-17T02:15:30.307Z INFO  [cron-runner] cache hit ratio=0.94 keys=4918 evictions=20
+2026-06-17T02:15:32.017Z INFO  [metrics-agent] cache hit ratio=0.94 keys=3390 evictions=5
+2026-06-17T02:15:32.648Z INFO  [cache-redis] session refreshed user_id=usr-3251 ttl_s=3600
+2026-06-17T02:15:33.820Z INFO  [worker-03] GET /metrics 200 scrape_duration_ms=21
+2026-06-17T02:15:34.494Z WARN  [cache-redis] retrying transient publish to queue attempt=2/3
+2026-06-17T02:15:35.614Z INFO  [cron-runner] config reloaded watch=/etc/app/config.yaml generation=48
+2026-06-17T02:15:36.683Z WARN  [cache-redis] slow query detected duration_ms=2324 query='SELECT ... LIMIT 50'
+2026-06-17T02:15:36.889Z INFO  [auth-svc] session refreshed user_id=usr-3507 ttl_s=3600
+2026-06-17T02:15:38.012Z INFO  [cron-runner] GET /metrics 200 scrape_duration_ms=215
+2026-06-17T02:15:39.969Z INFO  [api-gateway] session refreshed user_id=usr-1390 ttl_s=3600
+2026-06-17T02:15:40.199Z INFO  [auth-svc] cache hit ratio=0.94 keys=6663 evictions=19
+2026-06-17T02:15:41.799Z INFO  [auth-svc] GET /metrics 200 scrape_duration_ms=41
+2026-06-17T02:15:42.584Z WARN  [cache-redis] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:43.219Z WARN  [auth-svc] deprecation: header 'X-Legacy-Auth' will be removed in v2
+2026-06-17T02:15:44.993Z INFO  [cache-redis] cache hit ratio=0.94 keys=4118 evictions=5
+2026-06-17T02:15:45.577Z INFO  [auth-svc] config reloaded watch=/etc/app/config.yaml generation=29
+2026-06-17T02:15:47.659Z INFO  [cron-runner] healthcheck ok deps=[db,cache,queue] latency_ms=209
+2026-06-17T02:15:48.855Z WARN  [cron-runner] cache key 'catalog:4318' near TTL expiry, refreshing
+2026-06-17T02:15:49.789Z ERROR [api-gateway] upstream=payments.partner.example.invalid TLS handshake failed: x509: certificate has expired or is not yet valid: current time 2026-06-17T02:16:44Z is after 2026-06-15T00:00:00Z
+2026-06-17T02:15:50.755Z ERROR [api-gateway] upstream=payments.partner.example.invalid SSL_ERROR_EXPIRED_CERT_ALERT depth=0 subject="CN=payments.partner.example.invalid" notAfter=2026-06-15
+2026-06-17T02:15:51.262Z WARN  [api-gateway] circuit breaker OPEN for upstream=payments.partner.example.invalid failures=74 window=60s
+2026-06-17T02:15:51.858Z INFO  [api-gateway] GET /metrics 200 scrape_duration_ms=17
+2026-06-17T02:15:52.392Z INFO  [auth-svc] cache hit ratio=0.94 keys=4259 evictions=15
+2026-06-17T02:15:52.965Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-ff7872cf0d36 retry=false
+2026-06-17T02:15:55.024Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-18667
+2026-06-17T02:15:56.332Z WARN  [metrics-agent] retrying transient publish to queue attempt=1/3
+2026-06-17T02:15:56.490Z WARN  [api-gateway] circuit breaker OPEN for upstream=payments.partner.example.invalid failures=61 window=60s
+2026-06-17T02:15:57.819Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-184b0f3dec79 retry=false
+2026-06-17T02:15:59.549Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-607373a12b64 retry=false
+2026-06-17T02:16:01.278Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-c8e6dda23245 retry=false
+2026-06-17T02:16:03.402Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-8f8514392688 retry=false
+2026-06-17T02:16:04.390Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-19378
+2026-06-17T02:16:06.268Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-302a14ec3187 retry=false
+2026-06-17T02:16:07.117Z INFO  [api-gateway] config reloaded watch=/etc/app/config.yaml generation=91
+2026-06-17T02:16:08.156Z WARN  [api-gateway] circuit breaker OPEN for upstream=payments.partner.example.invalid failures=78 window=60s
+2026-06-17T02:16:08.952Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-53744
+2026-06-17T02:16:10.905Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-62800
+2026-06-17T02:16:11.987Z INFO  [api-gateway] scheduled job 'nightly-report' completed in 76ms rows=4892
+2026-06-17T02:16:12.245Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-35492
+2026-06-17T02:16:14.224Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-55553
+2026-06-17T02:16:16.227Z WARN  [api-gateway] circuit breaker OPEN for upstream=payments.partner.example.invalid failures=70 window=60s
+2026-06-17T02:16:17.391Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-7b139ac5d46f retry=false
+2026-06-17T02:16:17.775Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-89461
+2026-06-17T02:16:18.934Z INFO  [api-gateway] session refreshed user_id=usr-4049 ttl_s=3600
+2026-06-17T02:16:20.403Z INFO  [metrics-agent] healthcheck ok deps=[db,cache,queue] latency_ms=199
+2026-06-17T02:16:21.304Z WARN  [api-gateway] circuit breaker OPEN for upstream=payments.partner.example.invalid failures=28 window=60s
+2026-06-17T02:16:22.298Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-0021efe8036a retry=false
+2026-06-17T02:16:23.020Z INFO  [auth-svc] session refreshed user_id=usr-3925 ttl_s=3600
+2026-06-17T02:16:24.499Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-b57d786bbfb9 retry=false
+2026-06-17T02:16:25.250Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-327ee09343f0 retry=false
+2026-06-17T02:16:27.201Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-32639
+2026-06-17T02:16:27.549Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-2ee31d9865db retry=false
+2026-06-17T02:16:27.903Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-983e8757bb36 retry=false
+2026-06-17T02:16:29.052Z WARN  [cron-runner] cache key 'catalog:3207' near TTL expiry, refreshing
+2026-06-17T02:16:30.202Z WARN  [worker-03] retrying transient publish to queue attempt=3/3
+2026-06-17T02:16:31.473Z INFO  [metrics-agent] healthcheck ok deps=[db,cache,queue] latency_ms=142
+2026-06-17T02:16:32.665Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-80975
+2026-06-17T02:16:33.865Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-86546
+2026-06-17T02:16:35.390Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-114564e2a912 retry=false
+2026-06-17T02:16:37.360Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-a3f9dcf9fd78 retry=false
+2026-06-17T02:16:37.900Z WARN  [cron-runner] slow query detected duration_ms=609 query='SELECT ... LIMIT 50'
+2026-06-17T02:16:38.442Z INFO  [auth-svc] GET /metrics 200 scrape_duration_ms=112
+2026-06-17T02:16:39.220Z ERROR [worker-03] payment capture job failed reason=upstream_tls_error status=502 order_id=ord-51166
+2026-06-17T02:16:39.418Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-56a4233bfe41 retry=false
+2026-06-17T02:16:40.675Z WARN  [api-gateway] circuit breaker OPEN for upstream=payments.partner.example.invalid failures=38 window=60s
+2026-06-17T02:16:41.139Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-ef9bc2572a86 retry=false
+2026-06-17T02:16:42.273Z ERROR [payments-client] call to payments.partner.example.invalid/charge failed error="certificate verify failed (cert expired)" request_id=req-f91fa24b0944 retry=false
+2026-06-17T02:16:43.213Z INFO  [metrics-agent] config reloaded watch=/etc/app/config.yaml generation=79
+2026-06-17T02:16:43.653Z INFO  [auth-svc] cache hit ratio=0.94 keys=8479 evictions=12
+2026-06-17T02:16:45.207Z INFO  [alertmanager] ALERT fired: UpstreamTLSCertExpired upstream=payments.partner.example.invalid notAfter=2026-06-15 runbook=rotate-partner-tls-cert

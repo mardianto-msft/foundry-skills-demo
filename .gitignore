@@ -1,0 +1,48 @@
+# Squad local state and configuration
+.squad/
+.squad-workstream
+
+# Squad GitHub integration files
+.github/agents/squad.agent.md
+.github/workflows/squad-*.yml
+.github/workflows/sync-squad-labels.yml
+
+# Local Copilot agent customization files
+.copilot/
+
+# Local MCP server configuration
+.mcp.json
+
+# Python caches and test output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+.venv/
+.skills/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+
+# Azure Developer CLI local state
+.azure/
+
+# Bicep build output
+infra/*.json
+
+# Runtime-downloaded Foundry skill cache; keep authored source/skills tracked
+/skills/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store

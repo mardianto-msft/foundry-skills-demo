@@ -1,0 +1,85 @@
+2026-06-17T09:00:00.813Z INFO  [web-app-01] request_id=req-77432d102670 192.0.2.72 "GET /api/v1/search" status=200 latency_ms=79 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:01.260Z INFO  [web-app-03] request_id=req-e805da846a32 192.0.2.58 "GET /api/v1/checkout" status=200 latency_ms=56 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:01.443Z INFO  [web-app-03] request_id=req-1e3c29b62179 192.0.2.208 "GET /api/v1/orders" status=200 latency_ms=18 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:02.227Z INFO  [web-app-02] request_id=req-b5bb682575ec 192.0.2.215 "GET /api/v1/search" status=200 latency_ms=42 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:02.453Z INFO  [web-app-03] request_id=req-171ac826a6fc 192.0.2.217 "GET /api/v1/orders" status=200 latency_ms=90 ua="curl/8.4.0"
+2026-06-17T09:00:03.143Z INFO  [web-app-01] request_id=req-8dcb74f21345 192.0.2.145 "GET /api/v1/search" status=200 latency_ms=95 ua="curl/8.4.0"
+2026-06-17T09:00:03.764Z DEBUG [web-app-01] request_id=req-8dcb74f21345 db.pool acquired conn active=8/20 idle=8
+2026-06-17T09:00:04.484Z INFO  [web-app-02] request_id=req-038a39d5e085 192.0.2.222 "GET /healthz" status=200 latency_ms=72 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:05.144Z INFO  [web-app-03] request_id=req-64b50af03b97 192.0.2.157 "GET /healthz" status=200 latency_ms=15 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:05.686Z INFO  [web-app-01] request_id=req-244f58d669cb 192.0.2.126 "GET /api/v1/search" status=200 latency_ms=64 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:06.112Z DEBUG [web-app-01] request_id=req-244f58d669cb db.pool acquired conn active=5/20 idle=2
+2026-06-17T09:00:06.411Z INFO  [web-app-01] request_id=req-77021721a278 192.0.2.143 "GET /healthz" status=200 latency_ms=93 ua="curl/8.4.0"
+2026-06-17T09:00:07.160Z INFO  [web-app-03] request_id=req-f7fd633dbdde 192.0.2.149 "GET /healthz" status=200 latency_ms=14 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:07.803Z INFO  [web-app-01] request_id=req-a3766e4d58e7 192.0.2.105 "GET /api/v1/products" status=200 latency_ms=17 ua="curl/8.4.0"
+2026-06-17T09:00:08.654Z DEBUG [web-app-01] request_id=req-a3766e4d58e7 db.pool acquired conn active=2/20 idle=2
+2026-06-17T09:00:09.482Z INFO  [web-app-01] request_id=req-ff6c15c0c8e9 192.0.2.106 "GET /api/v1/cart" status=200 latency_ms=62 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:09.644Z INFO  [web-app-03] request_id=req-f469611a11f5 192.0.2.185 "GET /api/v1/search" status=200 latency_ms=15 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:09.858Z INFO  [web-app-01] request_id=req-7c3712da86a7 192.0.2.19 "GET /healthz" status=200 latency_ms=41 ua="curl/8.4.0"
+2026-06-17T09:00:10.386Z INFO  [web-app-02] request_id=req-20e32684b27b 192.0.2.82 "GET /api/v1/checkout" status=200 latency_ms=44 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:11.115Z INFO  [web-app-03] request_id=req-09348334896a 192.0.2.158 "GET /api/v1/orders" status=200 latency_ms=34 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:11.309Z INFO  [web-app-03] request_id=req-12d810a485ed 192.0.2.66 "GET /api/v1/checkout" status=200 latency_ms=79 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:11.767Z DEBUG [web-app-03] request_id=req-12d810a485ed db.pool acquired conn active=4/20 idle=1
+2026-06-17T09:00:12.005Z INFO  [web-app-03] request_id=req-d419b1b673bd 192.0.2.39 "GET /healthz" status=200 latency_ms=87 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:12.289Z INFO  [web-app-01] request_id=req-5d05ad7853c1 192.0.2.206 "GET /api/v1/cart" status=200 latency_ms=68 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:12.636Z INFO  [web-app-02] request_id=req-7706ca828bca 192.0.2.80 "GET /api/v1/orders" status=200 latency_ms=11 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:12.787Z INFO  [web-app-02] request_id=req-dbad3c681d06 192.0.2.29 "GET /api/v1/products" status=200 latency_ms=54 ua="curl/8.4.0"
+2026-06-17T09:00:13.175Z INFO  [web-app-02] request_id=req-399dac946dc5 192.0.2.82 "GET /healthz" status=200 latency_ms=86 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:13.943Z INFO  [web-app-01] request_id=req-6daeee6f529a 192.0.2.75 "GET /api/v1/orders" status=200 latency_ms=19 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:14.028Z INFO  [web-app-01] request_id=req-17f2ed6cfc74 192.0.2.8 "GET /api/v1/cart" status=200 latency_ms=91 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:14.594Z INFO  [web-app-01] request_id=req-5e173e4eaede 192.0.2.58 "GET /api/v1/checkout" status=200 latency_ms=28 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:15.066Z INFO  [web-app-01] request_id=req-f78e2978aa24 192.0.2.72 "GET /api/v1/search" status=200 latency_ms=27 ua="Mozilla/5.0 (compatible; DemoBot/1.0)"
+2026-06-17T09:00:15.451Z INFO  [web-app-03] request_id=req-ddaed16dc0cf 192.0.2.18 "GET /api/v1/cart" status=200 latency_ms=8 ua="curl/8.4.0"
+2026-06-17T09:00:16.077Z INFO  [web-app-02] request_id=req-7f78df0cac5e 192.0.2.193 "GET /healthz" status=200 latency_ms=24 ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+2026-06-17T09:00:16.242Z DEBUG [web-app-02] request_id=req-7f78df0cac5e db.pool acquired conn active=8/20 idle=1
+2026-06-17T09:00:16.980Z WARN  [web-app-01] db.pool HikariCP pool 'primary' near capacity active=19/20 idle=0 waiting=4
+2026-06-17T09:00:17.498Z WARN  [web-app-01] db.pool connection wait time rising avg_wait_ms=1850 threshold_ms=1000
+2026-06-17T09:00:17.597Z ERROR [web-app-02] request_id=req-18ca6eaac8d8 service=catalog db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:18.444Z ERROR [web-app-02] request_id=req-18ca6eaac8d8 192.0.2.215 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:18.747Z ERROR [web-app-03] request_id=req-b7210760474f service=checkout db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:19.303Z ERROR [web-app-03] request_id=req-b7210760474f 192.0.2.173 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:20.025Z ERROR [web-app-03] request_id=req-b5359309cc62 service=orders java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:20.575Z WARN  [web-app-01] request_id=req-931bdb2a0df3 192.0.2.112 "GET /api/v1/search" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:21.238Z ERROR [web-app-03] request_id=req-d58fed8a728e service=catalog java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:21.513Z ERROR [web-app-03] request_id=req-a0fa5f6b8a88 service=payments db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:21.680Z ERROR [web-app-03] request_id=req-a0fa5f6b8a88 192.0.2.144 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:22.244Z ERROR [web-app-01] request_id=req-f7ffe0297c79 service=payments java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:23.104Z ERROR [web-app-03] request_id=req-bdabe898736a service=search java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:23.313Z ERROR [web-app-03] request_id=req-66f893697b59 service=catalog java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:23.882Z ERROR [web-app-02] request_id=req-194f309ffea5 service=checkout db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:24.078Z ERROR [web-app-02] request_id=req-194f309ffea5 192.0.2.249 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:24.760Z WARN  [web-app-01] request_id=req-f21449273d7c 192.0.2.117 "GET /api/v1/orders" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:25.448Z ERROR [web-app-02] request_id=req-136682575250 service=orders db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:26.009Z ERROR [web-app-02] request_id=req-136682575250 192.0.2.106 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:26.234Z ERROR [web-app-02] request_id=req-799e2786d374 service=checkout db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:26.387Z ERROR [web-app-02] request_id=req-799e2786d374 192.0.2.234 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:26.797Z ERROR [web-app-01] request_id=req-99e3e9c8fe21 service=catalog db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:27.495Z ERROR [web-app-01] request_id=req-99e3e9c8fe21 192.0.2.229 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:27.931Z ERROR [web-app-02] request_id=req-270815fe85df service=checkout db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:28.429Z ERROR [web-app-02] request_id=req-270815fe85df 192.0.2.250 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:29.300Z ERROR [web-app-02] request_id=req-35adf9c1e2a8 service=orders db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:29.793Z ERROR [web-app-02] request_id=req-35adf9c1e2a8 192.0.2.84 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:29.997Z WARN  [web-app-03] request_id=req-ed16bfe16849 192.0.2.114 "GET /api/v1/checkout" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:30.598Z ERROR [web-app-01] request_id=req-7590d273e34f service=search java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:30.951Z WARN  [web-app-03] request_id=req-dff7e4c6428d 192.0.2.89 "GET /healthz" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:31.825Z ERROR [web-app-01] request_id=req-9f4efbacea67 service=orders db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:32.325Z ERROR [web-app-01] request_id=req-9f4efbacea67 192.0.2.148 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:32.824Z ERROR [web-app-01] request_id=req-fcc4f14a3e3e service=orders java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:33.198Z ERROR [web-app-03] request_id=req-2f8ac2acaf12 service=catalog java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:33.528Z ERROR [web-app-01] request_id=req-d33e5901a19b service=checkout db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:34.151Z ERROR [web-app-01] request_id=req-d33e5901a19b 192.0.2.97 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:34.707Z ERROR [web-app-02] request_id=req-5552c7f47e8e service=search java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available
+2026-06-17T09:00:35.372Z ERROR [web-app-02] request_id=req-52eb9d8e96cf service=search db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:35.819Z ERROR [web-app-02] request_id=req-52eb9d8e96cf 192.0.2.29 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:36.672Z ERROR [web-app-03] request_id=req-90c801f97b76 service=orders db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:37.490Z ERROR [web-app-03] request_id=req-90c801f97b76 192.0.2.160 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:38.122Z ERROR [web-app-03] request_id=req-319e1b429ad5 service=catalog db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:38.576Z ERROR [web-app-03] request_id=req-319e1b429ad5 192.0.2.53 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:39.030Z WARN  [web-app-03] request_id=req-858f9a3e247c 192.0.2.249 "GET /healthz" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:39.445Z WARN  [web-app-01] request_id=req-083eb8cb37f0 192.0.2.160 "GET /healthz" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:39.922Z WARN  [web-app-03] request_id=req-2e9d34119f33 192.0.2.62 "GET /api/v1/cart" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:40.373Z ERROR [web-app-02] request_id=req-d4d3fd81b6ee service=orders db.pool HikariPool-1 - Connection is not available, request timed out after 30000ms (total=20, active=20, idle=0, waiting=12)
+2026-06-17T09:00:40.554Z ERROR [web-app-02] request_id=req-d4d3fd81b6ee 192.0.2.245 "POST /api/v1/checkout" status=500 latency_ms=30007 error="PoolExhaustedException"
+2026-06-17T09:00:40.844Z WARN  [web-app-03] request_id=req-b1c863e2601a 192.0.2.64 "GET /healthz" status=503 latency_ms=30001 upstream_timeout=true
+2026-06-17T09:00:40.994Z ERROR [lb-gateway-01] upstream web-app pool unhealthy: 0/3 backends passing health check /healthz (read timeout)
+2026-06-17T09:00:41.857Z INFO  [oncall-bot] ALERT fired: HighHttp5xxRate service=checkout value=63% for=5m runbook=db-pool-exhaustion
