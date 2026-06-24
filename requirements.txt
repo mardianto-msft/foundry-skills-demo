@@ -2,5 +2,6 @@
 # Keep this list limited to what the src/agent and src/skills scripts import.
 azure-ai-projects>=2.2.0
 azure-identity>=1.17.0
+mcp>=1.0.0
 openai>=1.40.0
 python-dotenv>=1.0.0

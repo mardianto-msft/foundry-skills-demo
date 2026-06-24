@@ -11,12 +11,18 @@
 #
 # Prerequisites:
 #   - Azure CLI (`az version`) and an authenticated session (`az login`).
-#   - Contributor/Owner (or Azure AI Owner) on the target subscription.
-#   - Microsoft.CognitiveServices provider registered (see step 0).
+#   - Contributor on the target subscription so this script can register the
+#     Microsoft.CognitiveServices provider, create the resource group, and deploy
+#     the Azure AI Services account, Foundry project, and model deployment.
+#   - If the resource group already exists and Microsoft.CognitiveServices is
+#     already registered, Contributor on the resource group is sufficient.
+#   - User Access Administrator is required only if you will assign the runtime
+#     Foundry User role yourself.
 #
 # Auth note: NO keys are used. Local auth is disabled on the account; the
 # prompt agent is invoked with Entra ID (DefaultAzureCredential). Make sure your
-# identity has the "Foundry User" (or higher) role on the project.
+# identity has the "Foundry User" role on the Foundry project or inherits it
+# from the Foundry account.
 
 set -euo pipefail
 
@@ -91,8 +97,8 @@ echo "        FOUNDRY_PROJECT_ENDPOINT=${PROJECT_ENDPOINT}"
 echo "        MODEL_DEPLOYMENT_NAME=${MODEL_DEPLOYMENT_NAME}"
 echo "        AZURE_REGION=${LOCATION}"
 echo ""
-echo "   2. Grant your identity the 'Foundry User' role on the project"
-echo "      (required because local/key auth is disabled):"
+echo "   2. Grant your identity the 'Foundry User' role on the Foundry account"
+echo "      or project (required because local/key auth is disabled):"
 echo "        az role assignment create \\"
 echo "          --assignee \"\$(az ad signed-in-user show --query id -o tsv)\" \\"
 echo "          --role \"Foundry User\" \\"
