@@ -131,7 +131,7 @@ Skills preview SDK notes.
 
 ## Getting Started
 
-Follow these steps from the repository root. Steps 1-5 are shared setup for both
+Follow these steps from the repository root. Steps 1-4 are shared setup for both
 the direct-download and toolbox methods. After publishing skills, choose one or
 both runtime paths.
 
@@ -149,27 +149,22 @@ both runtime paths.
    azd auth login
    ```
 
-3. **Create an azd environment and choose a location**:
-
-   ```bash
-   azd env new
-   ```
-
-   Choose a short lowercase environment name such as `foundry-skills-demo` and
-   select **East US 2** (`eastus2`) for the location.
-
-4. **Provision the Foundry project and GPT model deployment**:
+3. **Provision the Foundry project and GPT model deployment**:
 
    ```bash
    azd up
    ```
+
+   If no azd environment exists yet, `azd up` prompts you to create one. Choose a
+   short lowercase environment name such as `foundry-skills-demo` and select
+   **East US 2** (`eastus2`) for the location.
 
    This deploys the Bicep infrastructure in [infra/main.bicep](infra/main.bicep):
    an Azure AI Services account, a Foundry project, and a GPT model
    deployment in the location you selected. Use `eastus2` unless you intentionally
    change the demo region. See the Appendix for naming details.
 
-5. **Publish the local `SKILL.md` files as versioned Foundry Skills**:
+4. **Publish the local `SKILL.md` files as versioned Foundry Skills**:
 
    ```bash
    python -m src.skills.publish_skill
@@ -188,7 +183,7 @@ Use this method when you want the app to download the selected active skill
 version into the local `skills/` cache and inject that downloaded `SKILL.md` into
 the prompt agent instructions.
 
-6. **Run the direct-download agent against a sample log**:
+5. **Run the direct-download agent against a sample log**:
 
    ```bash
    python -m src.agent.run_agent --log sample_logs/web.log
@@ -201,7 +196,7 @@ the prompt agent instructions.
    response includes a `Selected Skill` section to show which skill was used for
    the input log.
 
-7. **Try the other planted scenarios with direct download**:
+6. **Try the other planted scenarios with direct download**:
 
    ```bash
    python -m src.agent.run_agent --log sample_logs/k8s.log
@@ -214,7 +209,7 @@ Use this method when you want the skills to stay behind a Foundry toolbox MCP
 endpoint. The runner discovers skills as MCP resources and reads only the
 selected `skill://<name>/SKILL.md` resource.
 
-6. **Create a toolbox version with skill references**:
+5. **Create a toolbox version with skill references**:
 
    ```bash
    python -m src.toolbox.create_toolbox
@@ -231,7 +226,7 @@ selected `skill://<name>/SKILL.md` resource.
    python -m src.toolbox.create_toolbox --pin-default-versions
    ```
 
-7. **Run the toolbox test runner against the web and Kubernetes sample logs**:
+6. **Run the toolbox test runner against the web and Kubernetes sample logs**:
 
    ```bash
    python -m src.toolbox.run_toolbox_agent
@@ -242,7 +237,7 @@ selected `skill://<name>/SKILL.md` resource.
    names and descriptions, reads only the selected `skill://<name>/SKILL.md`, and
    invokes the prompt agent with that selected skill body.
 
-8. **Run a single toolbox sample or bypass routing for known cases**:
+7. **Run a single toolbox sample or bypass routing for known cases**:
 
    ```bash
    python -m src.toolbox.run_toolbox_agent --log sample_logs/web.log

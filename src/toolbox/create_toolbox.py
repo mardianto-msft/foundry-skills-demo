@@ -10,7 +10,6 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import inspect
 import os
 import sys
 from dataclasses import dataclass
@@ -55,32 +54,12 @@ def _model_value(model: Any, key: str, default: str = "") -> str:
 
 
 def _toolbox_skill_reference(skill: SkillReference, version: str | None) -> Any:
-    """Build the skill-reference object accepted by the installed preview SDK.
-
-    azure-ai-projects preview versions have used two shapes here:
-    ``ToolboxSkillReference(name=...)`` in newer docs and
-    ``SkillReferenceParam(skill_id=...)`` in older generated SDKs. Keep the
-    compatibility shim local to the toolbox workflow so direct-download code is
-    unaffected.
-    """
-    try:
-        from azure.ai.projects.models import ToolboxSkillReference
-    except ImportError:
-        kwargs = {"type": "skill_reference", "name": skill.name}
-        if version:
-            kwargs["version"] = version
-        return kwargs
+    from azure.ai.projects.models import ToolboxSkillReference
 
     kwargs = {"name": skill.name}
     if version:
         kwargs["version"] = version
     return ToolboxSkillReference(**kwargs)
-
-
-def _to_jsonable(value: Any) -> Any:
-    if hasattr(value, "as_dict"):
-        return value.as_dict()
-    return value
 
 
 def _create_project_client(endpoint: str) -> AIProjectClient:
@@ -97,32 +76,16 @@ def _create_toolbox_version(
     description: str,
     skill_references: list[Any],
 ):
-    if not hasattr(project.beta, "toolboxes"):
-        raise RuntimeError(
-            "This azure-ai-projects version does not expose beta.toolboxes. "
-            "Upgrade azure-ai-projects to a version with toolbox preview APIs."
-        )
-
-    create_version = project.beta.toolboxes.create_version
-    parameters = inspect.signature(create_version).parameters
-    if "skills" in parameters:
-        return create_version(
-            name=toolbox_name,
-            description=description,
-            tools=[],
-            skills=skill_references,
-        )
-
-    body = {
-        "description": description,
-        "tools": [],
-        "skills": [_to_jsonable(reference) for reference in skill_references],
-    }
-    return create_version(name=toolbox_name, body=body)
+    return project.toolboxes.create_version(
+        name=toolbox_name,
+        tools=[],
+        description=description,
+        skills=skill_references,
+    )
 
 
 def _set_default_toolbox_version(project, toolbox_name: str, version: str) -> None:
-    project.beta.toolboxes.update(toolbox_name, default_version=version)
+    project.toolboxes.update(toolbox_name, default_version=version)
 
 
 def _get_skill_references(project, skill_names: list[str]) -> list[SkillReference]:
